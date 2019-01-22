@@ -1,0 +1,48 @@
+01 - Curso Python #01 - Seja um Programador
+02 - Curso Python #02 - Para que serve o Python?
+03 - Curso Python #03 - Instalando o Python3 e o IDLE
+04 - Curso Python #04 - Primeiros comandos em Python3
+05 - Seja APOIADOR e receba RECOMPENSAS
+06 - Curso Python #05 - Instalando o PyCharm e o QPython3
+07 - Exercício Python #001 - Deixando tudo pronto
+08 - Exercício Python #002 - Respondendo ao Usuário
+09 - Curso Python #06 - Tipos Primitivos e Saída de Dados
+10 - Exercício Python #003 - Somando dois números
+11 - Exercício Python #004 - Dissecando uma Variável
+12 - Curso Python #07 - Operadores Aritméticos
+13 - Exercício Python #005 - Antecessor e Sucessor
+14 - Exercício Python #006 - Dobro, Triplo, Raiz Quadrada
+15 - Exercício Python #007 - Média Aritmética
+16 - Exercício Python #008 - Conversor de Medidas
+17 - Exercício Python #009 - Tabuada
+18 - Exercício Python #010 - Conversor de Moedas
+19 - Exercício Python #011 - Pintando Parede
+20 - Exercício Python #012 - Calculando Descontos
+21 - Exercício Python #013 - Reajuste Salarial
+22 - Exercício Python #014 - Conversor de Temperaturas
+23 - Exercício Python #015 - Aluguel de Carros
+24 - Curso Python #08 - Utilizando Módulos
+25 - Exercício Python #016 - Quebrando um número
+26 - Exercício Python #017 - Catetos e Hipotenusa
+27 - Exercício Python #018 - Seno, Cosseno e Tangente
+28 - Exercício Python #019 - Sorteando um item na lista
+29 - Exercício Python #020 - Sorteando uma ordem na lista
+30 - Exercício Python #021 - Tocando um MP3
+31 - Curso Python #09 - Manipulando Texto
+32 - Exercício Python #022 - Analisador de Textos
+33 - Exercício Python #023 - Separando dígitos de um número
+34 - Exercício Python #024 - Verificando as primeiras letras de um texto
+35 - Exercício Python #025 - Procurando uma string dentro de outra
+36 - Exercício Python #026 - Primeira e última ocorrência de uma string
+37 - Exercício Python #027 - Primeiro e último nome de uma pessoa
+38 - Curso Python #10 - Condições (Parte 1)
+39 - Exercício Python #028 - Jogo da Adivinhação v.1.0
+40 - Exercício Python #029 - Radar eletrônico
+41 - Exercício Python #030 - Par ou Ímpar?
+42 - Exercício Python #031 - Custo da Viagem
+43 - Exercício Python #032 - Ano Bissexto
+44 - Exercício Python #033 - Maior e menor valores
+45 - Exercício Python #034 - Aumentos múltiplos
+46 - Exercício Python #035 - Analisando Triângulo v1.0
+47 - Curso Python #11 - Cores no Terminal
+48 - Como conseguir seu certificado GRÁTIS?
