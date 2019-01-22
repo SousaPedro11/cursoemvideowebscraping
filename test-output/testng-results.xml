@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="9" total="11" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12168" started-at="2019-01-22T00:41:44Z" finished-at="2019-01-22T00:41:56Z">
+  <suite name="Default suite" duration-ms="2643" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12168" started-at="2019-01-22T00:41:44Z" finished-at="2019-01-22T00:41:56Z">
+    <test name="Default test" duration-ms="2643" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:13Z">
       <class name="cursoemvideo.TesteNomeVideo">
-        <test-method status="PASS" signature="PHP()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="PHP" duration-ms="1498" started-at="2019-01-22T00:41:44Z" finished-at="2019-01-22T00:41:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PHP -->
-        <test-method status="PASS" signature="banco()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="banco" duration-ms="796" started-at="2019-01-22T00:41:45Z" finished-at="2019-01-22T00:41:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- banco -->
-        <test-method status="PASS" signature="hardware()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="hardware" duration-ms="894" started-at="2019-01-22T00:41:46Z" finished-at="2019-01-22T00:41:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hardware -->
-        <test-method status="PASS" signature="html()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="html" duration-ms="871" started-at="2019-01-22T00:41:47Z" finished-at="2019-01-22T00:41:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- html -->
-        <test-method status="PASS" signature="java()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="java" duration-ms="1926" started-at="2019-01-22T00:41:48Z" finished-at="2019-01-22T00:41:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- java -->
-        <test-method status="PASS" signature="logica()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="logica" duration-ms="1102" started-at="2019-01-22T00:41:50Z" finished-at="2019-01-22T00:41:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logica -->
-        <test-method status="PASS" signature="pooJava()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="pooJava" duration-ms="985" started-at="2019-01-22T00:41:51Z" finished-at="2019-01-22T00:41:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pooJava -->
-        <test-method status="PASS" signature="pooPHP()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="pooPHP" duration-ms="944" started-at="2019-01-22T00:41:52Z" finished-at="2019-01-22T00:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pooPHP -->
-        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Estruturas" duration-ms="812" started-at="2019-01-22T00:41:53Z" finished-at="2019-01-22T00:41:54Z">
+        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Estruturas" duration-ms="1558" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Estruturas -->
-        <test-method status="PASS" signature="python3EstruturasCompostas()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3EstruturasCompostas" duration-ms="795" started-at="2019-01-22T00:41:54Z" finished-at="2019-01-22T00:41:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- python3EstruturasCompostas -->
-        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Fundamentos" duration-ms="1487" started-at="2019-01-22T00:41:54Z" finished-at="2019-01-22T00:41:56Z">
+        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Fundamentos" duration-ms="1061" started-at="2019-01-22T03:05:12Z" finished-at="2019-01-22T03:05:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Fundamentos -->
