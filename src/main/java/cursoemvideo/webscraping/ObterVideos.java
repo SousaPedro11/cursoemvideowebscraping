@@ -12,9 +12,11 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import cursoemvideo.util.Utilitario;
+
 /**
  * Classe que faz o WebScraping da página Web para obter o nome da Playlist e a lista de nomes dos vídeos presentes nela.
- * 
+ *
  * @author pedro
  *
  */
@@ -33,7 +35,7 @@ public class ObterVideos {
     /**
      * Representa um documento HTML.
      */
-    private final Document DocumentoHTML;
+    private final Document documentoHTML;
 
     /**
      * Define a pasta Home do sistema.
@@ -44,17 +46,18 @@ public class ObterVideos {
      * Construtor da classe.
      *
      * @param url
+     *            Url da Playlist
      */
     public ObterVideos(final String url) {
 
         this.url = url;
-        this.DocumentoHTML = this.lerDocumento(url);
+        this.documentoHTML = this.lerDocumento(url);
     }
 
     /**
      * Chama o método privado que extrai os nomes dos vídeos presentes na playlist, a partir de uma url.
      *
-     * @return
+     * @return Conteúdo da própria classe
      */
     public ObterVideos obterNomes() {
 
@@ -67,7 +70,8 @@ public class ObterVideos {
      * Obtém os dados da página a partir de sua url(link).
      *
      * @param link
-     * @return
+     *            Url da Playlist
+     * @return Conteúdo da página HTML
      */
     private Document lerDocumento(final String link) {
 
@@ -84,12 +88,12 @@ public class ObterVideos {
     /**
      * Obtém o nome da Playlist
      *
-     * @return
+     * @return Nome da Playlist
      */
     private String obterNomePlayList() {
 
         String elemento = null;
-        final Elements elementos = this.getDocumentoHTML().getElementsByAttributeValue("class", "pl-header-title");
+        final Elements elementos = this.documentoHTML.getElementsByAttributeValue("class", "pl-header-title");
         for (final Element element : elementos) {
             elemento = element.text();
         }
@@ -100,10 +104,11 @@ public class ObterVideos {
      * Obtem o nome dos vídeos da Playlist e adiciona ao Array de nomes.
      *
      * @param link
+     *            Url da Playlist
      */
     private void obterNomes(final String link) {
 
-        final Elements nomes = this.getDocumentoHTML().getElementsByAttributeValue("id", "pl-load-more-destination");
+        final Elements nomes = this.documentoHTML.getElementsByAttributeValue("id", "pl-load-more-destination");
 
         for (final Element nome : nomes) {
 
@@ -125,12 +130,16 @@ public class ObterVideos {
     /**
      * Imprime a lista de nomes, já enumerada
      *
-     * @return
+     * @return Conteúdo da própria classe.
      */
     public ObterVideos imprimirLista() {
 
+        System.out.println(Utilitario.imprimeSeparador(this.obterNomePlayList()));
         System.out.println(this.obterNomePlayList());
+        System.out.println(Utilitario.imprimeSeparador(this.obterNomePlayList()));
+
         this.enumerarVideos().forEach(System.out::println);
+
         System.out.println();
 
         return this;
@@ -139,24 +148,27 @@ public class ObterVideos {
     /**
      * Salva o conteúdo, na Pasta com o nome da Playlist, em um arquivo "nome".txt.
      *
-     * @param nome
+     * @param nomeArquivo
+     *            Nome do arquivo a ser salvo.
      */
-    public void salvarNomes(final String nome) {
+    public void salvarNomes(final String nomeArquivo) {
 
-        this.salvarNomes(this.obterNomePlayList(), nome);
+        this.salvarNomes(this.obterNomePlayList(), nomeArquivo);
     }
 
     /**
      * Salva o conteúdo da lista em pasta e arquivo .txt com nomes definidos pelo usuário.
      *
-     * @param pasta
-     * @param nome
+     * @param nomePasta
+     *            Nome da pasta onde o arquivo será salvo.
+     * @param nomeArquivo
+     *            Nome do arquivo a ser salvo.
      */
-    public void salvarNomes(final String pasta, final String nome) {
+    public void salvarNomes(final String nomePasta, final String nomeArquivo) {
 
         final StringBuilder stringBuilder = new StringBuilder();
 
-        final String caminhoPasta = this.home + File.separator + "Downloads" + File.separator + pasta + File.separator;
+        final String caminhoPasta = this.home + File.separator + "Downloads" + File.separator + nomePasta + File.separator;
 
         new File(caminhoPasta).mkdirs();
 
@@ -165,10 +177,16 @@ public class ObterVideos {
         });
         try {
 
-            final String nomeArquivo = nome.toLowerCase() + ".txt";
-            Files.write(Paths.get(caminhoPasta + nomeArquivo),
+            final String arquivo = nomeArquivo.toLowerCase() + ".txt";
+
+            Files.write(Paths.get(caminhoPasta + arquivo),
                             stringBuilder.toString().getBytes("UTF-8"));
-            System.out.println("Arquivo " + nomeArquivo + " salvo em: " + caminhoPasta);
+
+            final String saidaMetodo = "Arquivo " + arquivo + " salvo em: " + caminhoPasta;
+
+            System.out.println(saidaMetodo);
+            System.out.println(Utilitario.imprimeSeparador(saidaMetodo));
+
             System.out.println();
         } catch (final IOException e) {
             e.printStackTrace();
@@ -178,7 +196,7 @@ public class ObterVideos {
     /**
      * Enumera a Playlist.
      *
-     * @return
+     * @return Lista de nomes já enumerada.
      */
     private List<String> enumerarVideos() {
 
@@ -191,13 +209,4 @@ public class ObterVideos {
         return novaLista;
     }
 
-    /**
-     * Obtem o conteúdo da página
-     *
-     * @return
-     */
-    private Document getDocumentoHTML() {
-
-        return this.DocumentoHTML;
-    }
 }

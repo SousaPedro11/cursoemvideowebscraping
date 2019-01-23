@@ -1,4 +1,4 @@
-package cursoemvideo;
+package cursoemvideo.teste;
 
 import org.testng.annotations.Test;
 

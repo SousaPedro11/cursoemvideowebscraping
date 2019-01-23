@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="9" total="11" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2643" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:13Z">
+  <suite name="Default suite" duration-ms="2625" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2643" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:13Z">
-      <class name="cursoemvideo.TesteNomeVideo">
-        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Estruturas" duration-ms="1558" started-at="2019-01-22T03:05:10Z" finished-at="2019-01-22T03:05:12Z">
+    <test name="Default test" duration-ms="2625" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:22Z">
+      <class name="cursoemvideo.teste.TesteNomeVideo">
+        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@56ef9176]" name="python3Estruturas" duration-ms="1494" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Estruturas -->
-        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.TesteNomeVideo@51081592]" name="python3Fundamentos" duration-ms="1061" started-at="2019-01-22T03:05:12Z" finished-at="2019-01-22T03:05:13Z">
+        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@56ef9176]" name="python3Fundamentos" duration-ms="1105" started-at="2019-01-22T15:13:21Z" finished-at="2019-01-22T15:13:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Fundamentos -->
-      </class> <!-- cursoemvideo.TesteNomeVideo -->
+      </class> <!-- cursoemvideo.teste.TesteNomeVideo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
