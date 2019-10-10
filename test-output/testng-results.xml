@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="9" total="11" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2625" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:22Z">
+  <suite name="Default suite" duration-ms="2339" started-at="2019-10-10T13:06:53Z" finished-at="2019-10-10T13:06:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2625" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:22Z">
+    <test name="Default test" duration-ms="2339" started-at="2019-10-10T13:06:53Z" finished-at="2019-10-10T13:06:55Z">
       <class name="cursoemvideo.teste.TesteNomeVideo">
-        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@56ef9176]" name="python3Estruturas" duration-ms="1494" started-at="2019-01-22T15:13:20Z" finished-at="2019-01-22T15:13:21Z">
+        <test-method status="PASS" signature="python3Estruturas()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@27c20538]" name="python3Estruturas" duration-ms="1571" started-at="2019-10-10T13:06:53Z" finished-at="2019-10-10T13:06:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Estruturas -->
-        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@56ef9176]" name="python3Fundamentos" duration-ms="1105" started-at="2019-01-22T15:13:21Z" finished-at="2019-01-22T15:13:22Z">
+        <test-method status="PASS" signature="python3Fundamentos()[pri:0, instance:cursoemvideo.teste.TesteNomeVideo@27c20538]" name="python3Fundamentos" duration-ms="747" started-at="2019-10-10T13:06:54Z" finished-at="2019-10-10T13:06:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- python3Fundamentos -->

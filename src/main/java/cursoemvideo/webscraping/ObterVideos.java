@@ -73,11 +73,12 @@ public class ObterVideos {
      *            Url da Playlist
      * @return Conteúdo da página HTML
      */
+    @SuppressWarnings("deprecation")
     private Document lerDocumento(final String link) {
 
         Document documentoHTML = null;
         try {
-            documentoHTML = Jsoup.connect(link).get();
+            documentoHTML = Jsoup.connect(link).timeout(10000).validateTLSCertificates(false).get();
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -168,7 +169,15 @@ public class ObterVideos {
 
         final StringBuilder stringBuilder = new StringBuilder();
 
-        final String caminhoPasta = this.home + File.separator + "Downloads" + File.separator + nomePasta + File.separator;
+        String caminhoPasta = this.home + File.separator + "Downloads" + File.separator + nomePasta + File.separator;
+
+        if (caminhoPasta.contains(": ")) {
+
+            caminhoPasta = caminhoPasta.replace(": ", "_");
+        } else if (caminhoPasta.contains(":")) {
+
+            caminhoPasta = caminhoPasta.replace(":", "_");
+        }
 
         new File(caminhoPasta).mkdirs();
 

@@ -11,13 +11,13 @@ public class TesteNomeVideo {
     @Test(enabled = !TesteNomeVideo.HABILITAR)
     public void python3Fundamentos() {
 
-        final String url = "http://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6";
+        final String url = "https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6";
 
         new ObterVideos(url)
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("fundamentosPython3");
-        ;
+
     }
 
     @Test(enabled = !TesteNomeVideo.HABILITAR)
@@ -29,7 +29,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("estruturasPython3");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -41,7 +41,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("estruturasCompostasPython3");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -53,7 +53,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("hardware");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -65,7 +65,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("logica");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -77,7 +77,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("html");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -89,7 +89,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("java");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -101,7 +101,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("banco");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -113,7 +113,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("poojava");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -125,7 +125,7 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("poophp");
-        ;
+
     }
 
     @Test(enabled = TesteNomeVideo.HABILITAR)
@@ -137,6 +137,6 @@ public class TesteNomeVideo {
                         .obterNomes()
                         .imprimirLista()
                         .salvarNomes("php");
-        ;
+
     }
 }
